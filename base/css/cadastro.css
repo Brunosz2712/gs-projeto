@@ -65,3 +65,28 @@ h1{
     background-color: #4b95c334;
     color:  #fff;
  }
+
+ input{
+    background-color: transparent;
+    color: #d9d9d9;
+    border-radius: 55px;
+    border: 1px solid #d9d9d9;
+    padding: 3px 3px 3px 3px;
+    width: 400px;
+}
+
+#btn-confirmar{
+    background-color: transparent;
+    color:  #fff;
+    border-radius: 55px;
+    padding: 2px 26px;
+    text-decoration: none;
+    border: 1px solid #d9d9d9;
+
+}
+
+#btn-confirmar:hover{
+    background-color: #4b95c334;
+    color:  #fff;
+}
+
