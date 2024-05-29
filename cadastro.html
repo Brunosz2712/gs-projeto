@@ -16,7 +16,23 @@
         </video>
     </div>
     <div class="content-c">
+        <form onsubmit="return criarConta(event)">
+            <section class="colocar-dados">
+                <br><br><br>
+                <input id="nome-completo" placeholder="Nome Completo" required>
+                <br><br><br>
+                <input id="email" type="email" placeholder="Email" required>
+                <br><br><br>
+                <input id="senha" type="password" placeholder="Senha" required>
+                <br><br><br>
+                <input id="confirmar-senha" type="password" placeholder="Confirmar Senha" required>
+                <br><br><br>
+                <button type="submit" id="btn-confirmar">Confirmar</button>
+                <p id="mensagem"></p>
+            </section>
+        </form>
         <a href="./index.html" class="btn-voltar">Voltar</a>
     </div>
+    <script src="./base/java/script.js"></script>
 </body>
 </html>
