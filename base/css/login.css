@@ -20,29 +20,13 @@ h1{
     color: #fff;
 }
 
-.content p{
-    font-size: 23px; 
+.content-l p{
+    font-size: 25px; 
     color: #fff;
 }
 
-h2{
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-}
 
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-a:hover{
-    color: #8a2be2;
-}
-
-.fundo{
+.fundo-l{
     width: 100%;
     height: 100%;
     /* width: 100vw;
@@ -53,7 +37,7 @@ a:hover{
     align-items: center;
 }
 
-.fundo video{
+.fundo-l video{
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +45,7 @@ a:hover{
     width: 100%;
 }
 
-.content{
+.content-l{
     position: relative;
     z-index: 1;
     /* max-width: 100px; */
@@ -69,35 +53,7 @@ a:hover{
     text-align: center;
 }
 
-.help-ocean{
-    /* background-color: #fff; */
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 25px;
-    border: 1px solid #fff;
-    margin-bottom: 60px;
-    /* height: 250px; */
-
-}
-
-.bot{
-    /* background-color: #fff; */
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 25px;
-    border: 1px solid #fff;
-    /* height: 250px; */
-
-}
-
-.btn{
-    display: flex;
-    justify-content: right;
-    padding: 1%;
-}
-
-
-.btn-login{
+.btn-voltar{
     color: #fff;
     border-radius: 55px;
     padding: 2px 26px;
@@ -105,21 +61,7 @@ a:hover{
     border: 1px solid #d9d9d9;
 }
 
-.btn-criar-conta{
-    color: #fff;
-    border-radius: 55px;
-    padding: 2px 16px;
-    text-decoration: none;
-    border: 1px solid #d9d9d9;
-    margin-right: 1%;
-}
-
-.btn-criar-conta:hover{
-    background-color: #4b95c334;
-    color:  #fff;
- }
-
- .btn-login:hover{
+.btn-voltar:hover{
     background-color: #4b95c334;
     color:  #fff;
  }
