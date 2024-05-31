@@ -70,7 +70,8 @@ a:hover{
 }
 
 .help-ocean{
-    /* background-color: #fff; */
+    background-color:#0270b0;
+    opacity: 0.8;
     margin: 0 auto;
     width: 50%;
     border-radius: 25px;
@@ -81,7 +82,8 @@ a:hover{
 }
 
 .bot{
-    /* background-color: #fff; */
+    background-color:#0270b0;
+    opacity: 0.8;
     margin: 0 auto;
     width: 50%;
     border-radius: 25px;
