@@ -67,13 +67,14 @@ h1{
  }
 
  input{
-    background-color: transparent;
-    color: #d9d9d9;
+    /* background-color:#0270b0; */
+    /* color: #fff;  */
     border-radius: 55px;
     border: 1px solid #d9d9d9;
     padding: 3px 3px 3px 3px;
     width: 400px;
 }
+
 
 #btn-confirmar{
     background-color: transparent;
