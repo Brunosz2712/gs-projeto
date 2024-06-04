@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+
+body {
+    background-image: url('../img/fundo2.jpg');
+    background-size: cover;
     font-family: "Radio Canada Big", sans-serif;
-    height: 100px;
+    /* background: linear-gradient(to left, #001f3f, #0074d9, #7fdbff); */
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
@@ -59,6 +67,7 @@ h1{
     padding: 2px 26px;
     text-decoration: none;
     border: 1px solid #d9d9d9;
+    margin: auto;
 }
 
 .btn-voltar:hover{
@@ -67,6 +76,9 @@ h1{
  }
 
  input{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     /* background-color: transparent;
     color: #d9d9d9; */
     border-radius: 55px;
@@ -82,6 +94,7 @@ h1{
     padding: 2px 26px;
     text-decoration: none;
     border: 1px solid #d9d9d9;
+    cursor: pointer;
 
 }
 

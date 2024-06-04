@@ -1,21 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Ocean</title>
+    <title>HELP OCEAN</title>
     <link rel="stylesheet" href="./base/css/help-ocean.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
 <body>
     <header>
         <h1>HELP OCEAN</h1>
     </header>
-    <div class="fundo-h">
-        <video autoplay muted loop>
-            <source src="./base/video/global_solution5.mp4" type="video/mp4">
-        </video>
+    <main>
+        <p>Nós sabemos o quanto está sendo difícil preservar o nosso meio-ambiente...</p>
+    </main>
+    <div class="content">
+        <div class="form-container">
+            <form id="beach-form">
+                <h2>Insira os Dados para Atualizar o Gráfico</h2>
+                <label for="beach-select">Selecione a Praia que Deseja Realizar a Coleta:</label>
+                <br>
+                <select name="beach" id="beach-select">
+                    <option value="escolha">Escolha a Praia</option>
+                    <option value="Santos">Santos</option>
+                    <option value="Ubatuba">Ubatuba</option>
+                    <option value="Guarujá">Guarujá</option>
+                </select>
+                <input type="file" name="photo" id="photo" accept="image/*">
+                <input type="text" name="location" id="location" placeholder="Digite sua localização">
+                <input type="number" name="weight" id="weight" placeholder="Quantidade de quilos coletados">
+                <button type="submit">Enviar Dados</button>
+                <div id="error-messages"></div>
+            </form>
+            <div id="chart-container">
+                <canvas id="collection-chart"></canvas>
+            </div>
+        </div>
     </div>
-    <div class="content-h">
+    <div id="ranking">
+            <h2>RANKING DAS PRAIAS MAIS LIMPAS</h2>
+            <ol id="beach-ranking"></ol>
+            <p id="top-beach-message"></p>
+        </div>
+    <div class="container">
+        <div class="bot">
+            <h2>Dúvidas? Aprenda um pouco com o nosso BOT</h2>
+        </div>
     </div>
-</body>
+    <div class="integrantes">
+        <h2>CONHEÇA OS INTEGRANTES DO PROJETO</h2>
+    </div>
+    <div class="botao">
+        <a href="./index.html" class="btn-voltar">Voltar</a>
+    </div>
+    <script src="./base/java/java.js"></script>
+</body> 
 </html>

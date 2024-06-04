@@ -9,12 +9,8 @@
 <body>
     <header>
         <h1>LOGIN</h1>
+        <br><br><br>
     </header>
-    <div class="fundo-l">
-        <video autoplay muted loop>
-            <source src="./base/video/global_solution5.mp4" type="video/mp4">
-        </video>
-    </div>
     <div class="content-l">
         <form onsubmit="return fazerLogin(event)">
             <section class="colocar-dados">
@@ -24,10 +20,13 @@
                 <input id="senha" type="password" placeholder="Senha">
                 <br><br><br>
                 <button type="submit" id="btn-confirmar">Confirmar</button>
+                <br><br><br>
                 <p id="mensagem"></p>
             </section>
+            <div class="botao">
+                <a href="./index.html" class="btn-voltar">Voltar</a>
+            </div>
         </form>
-        <a href="./index.html" class="btn-voltar">Voltar</a>
     </div>
     <script src="./base/java/script.js"></script>
 </body>

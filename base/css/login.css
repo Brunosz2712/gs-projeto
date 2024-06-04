@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+
+body {
+    background-image: url('../img/fundo2.jpg');
+    background-size: cover;
     font-family: "Radio Canada Big", sans-serif;
-    height: 100px;
+    /* background: linear-gradient(to left, #001f3f, #0074d9, #7fdbff); */
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
@@ -26,31 +34,17 @@ h1{
 }
 
 
-.fundo-l{
-    width: 100%;
-    height: 100%;
-    /* width: 100vw;
-    height: 100vh; */
-    overflow: hidden;
+.content-l{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.fundo-l video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-}
-
-.content-l{
-    position: relative;
-    z-index: 1;
-    /* max-width: 100px; */
-    margin: 0 auto;
-    text-align: center;
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    border-radius: 55px;
+    padding: 2px 26px;
 }
 
 .btn-voltar{
@@ -77,12 +71,16 @@ h1{
 
 
 #btn-confirmar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
     background-color: transparent;
     color:  #fff;
     border-radius: 55px;
     padding: 2px 26px;
     text-decoration: none;
     border: 1px solid #d9d9d9;
+    cursor: pointer;
 
 }
 

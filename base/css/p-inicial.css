@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+
+body {
+    background-image: url('../img/fundo2.jpg');
+    background-size: cover;
     font-family: "Radio Canada Big", sans-serif;
-    height: 100px;
+    /* background: linear-gradient(to left, #001f3f, #0074d9, #7fdbff); */
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
-    position: relative;
-    z-index: 1;
+   margin-bottom: 5%;
 }
 
 h1{
