@@ -48,6 +48,7 @@ h1{
 }
 
 .btn-voltar{
+    background-color: #00FF00;
     color: #fff;
     border-radius: 55px;
     padding: 2px 26px;
@@ -85,7 +86,7 @@ h1{
 }
 
 #btn-confirmar:hover{
-    background-color: #4b95c334;
+    background-color: #00FF00;
     color:  #fff;
 }
 

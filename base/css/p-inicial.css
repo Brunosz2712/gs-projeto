@@ -59,15 +59,6 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-
-.fundo video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-}
-
 .content{
     position: relative;
     z-index: 1;
@@ -107,6 +98,7 @@ a:hover{
 
 
 .btn-login{
+    background-color: #00FF00;
     color: #fff;
     border-radius: 55px;
     padding: 2px 26px;
@@ -115,6 +107,7 @@ a:hover{
 }
 
 .btn-criar-conta{
+    background-color: #00FF00;
     color: #fff;
     border-radius: 55px;
     padding: 2px 16px;
