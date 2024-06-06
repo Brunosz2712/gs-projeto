@@ -36,15 +36,17 @@ main{
     right: 50%;
 }
 
-p{
+main p{
     font-size: 18px; 
     color: #fff;
 }
 
 .container{
     display: flex;
-    /* width: 100%; */
-    /* height: 100%; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -124,36 +126,6 @@ button:hover {
     /* justify-content: center; */
 }
 
-.bot{
-    background-color:rgba(2, 112, 176, 0.5);
-    display: flex;
-    justify-content: center;
-    /* text-align: center; */
-    /* margin-left: -2%; */
-    margin-top: -22%;
-    border-radius: 20px;
-    margin-left:   47%;
-    /* padding-right: -5%; */
-    width: 50%;
-    height: 40%;
-    border: 1px solid #fff;
-    /* background-color: rgba(2, 112, 176, 0.4); */
-    /* margin-top: -50%; */
-    margin-right: 1%;
-}
-
-.bot{
-    color: #fff;
-    text-align: center;
-}
-
-.form-container-g {
-    background: #000;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .botao{
     display: flex;
     justify-content: center;
@@ -177,10 +149,12 @@ button:hover {
 
  #ranking{
     background-color: rgba(2, 112, 176, 0.5);
-    display: flex;
-    justify-content: center;
     text-align: center;
-    margin: 2%;
+    color: #fff;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin: auto;
     margin-left: 1%;
     width: 51%;
     height: 200px;
@@ -192,12 +166,6 @@ button:hover {
  #ranking h2{
     color: #FF00FF;
  }
-
- .first-place {
-    font-size: 1.5em; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Torna o texto em negrito */
-    color: #f44336; /* Cor vermelha para destaque */
-}
 
 #beach-ranking li {
     display: flex;
@@ -212,37 +180,52 @@ button:hover {
     /* margin-top: 10px; Espaçamento acima do parágrafo */
 }
 
-.integrates{
-    justify-content: center;
-    margin: auto;
+.integrantes{
     background-color: rgba(2, 112, 176, 0.5);
-    border-radius: 20px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
     border: 1px solid #fff;
-    width: 65%;
-    height: 50%;
-    margin-top: 3%;
+    border-radius: 20px;
+    width: 95%;
+    height: 40%;
+    margin-top: 4%;
+    /* height: 60%; */
+    /* align-items: center; */
+    /* padding: 10px; */
+}
+
+.integrantes p {
+    color: #fff;
+    text-align: center;
 }
 
 .titulo{
-    display: flex;
-    margin-top: 0%;
-    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
     color: #fff;
 }
 
 .gustavo img{
-    width: 80%;
-    height: 70%;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 40%;
     border-radius: 100%;
 }
 
 .gustavo {
-    width: 16%;
-    height: 55%;
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 1%;
-    border-radius: 20px;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    /* text-align: center; */
+    /* padding-right: 15%; */
+    /* margin: auto; */
+    /* margin-top: auto; */
+    margin-right:    auto;
+    /* margin-top: 1%; */
+    /* border: 1px solid #fff; */
+    /* border-radius: 20px; */
 }
 
 h3{
@@ -251,41 +234,52 @@ h3{
 }
 
 .bruno img{
-    width: 90%;
-    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    height: 40%;
     border-radius: 100%;
     
 }
 
 .bruno{
-    margin: auto;
-    margin-top: -21%;  
-    width: 15%;
-    height: 50%;
+    width: 20%;
+    height: 100%;
     text-align: center;
+    /* padding-right: 15%; */
+    margin: auto;
+    /* margin-left: auto; */
+    /* margin-top: -19%; */
+    /* border: 1px solid #fff; */
+    /* border-radius: 20px; */
     
 }
 
 .jhonatta{
-    /* background-color: rgba(2, 112, 176, 0.5); */
-    margin-left: 84%;
-    margin-top: -19%;
-    width: 15%;
-    height: 50%;
+    width: 20%;
+    height: 100%;
     text-align: center;
+    /* margin: 81%; */
+    margin-left: auto;
+    /* margin-top: -19%; */
+    /* border: 1px solid #fff; */
+    /* border-radius: 20px; */
 }
 
 .jhonatta img{
-    width: 80%;
-    height: 70%;
+    width: 60%;
+    height: 40%;
     border-radius: 100%;
 }
 
-a {
+.git a {
     background-color: #00FF00;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    width: 20%;
+    margin: 10% auto;
     text-decoration: none;
     color: #000;
 }
+
