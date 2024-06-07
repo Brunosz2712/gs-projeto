@@ -259,7 +259,7 @@ h3{
 }
 
 .jhonatta img{
-    width: 60%;
+    width: 40%;
     height: 40%;
     border-radius: 100%;
 }
@@ -272,6 +272,12 @@ h3{
     padding: 2px 26px;
     text-decoration: none;
 }
+
+#toggle-btn:hover{
+    background-color: #4b95c334;
+    color:  #fff;
+ }
+
 
 @media screen and (max-width: 768px) {
     /* Estilos específicos para telas menores, como tablets */
