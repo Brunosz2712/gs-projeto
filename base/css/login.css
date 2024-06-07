@@ -10,7 +10,6 @@ body {
     background-image: url('../img/fundo2.jpg');
     background-size: cover;
     font-family: "Radio Canada Big", sans-serif;
-    /* background: linear-gradient(to left, #001f3f, #0074d9, #7fdbff); */
     width: 100vw;
     height: 100vh;
 }
@@ -62,8 +61,6 @@ h1{
  }
 
  input{
-    /* background-color:#0270b0; */
-    /* color: #fff;  */
     border-radius: 55px;
     border: 1px solid #d9d9d9;
     padding: 3px 3px 3px 3px;
@@ -90,3 +87,59 @@ h1{
     color:  #fff;
 }
 
+/* Responsividade */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .content-c p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .content-c p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .content-c p {
+        font-size: 16px;
+    }
+
+    .btn-voltar, #btn-confirmar {
+        padding: 8px 16px;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .content-c p {
+        font-size: 14px;
+    }
+
+    .btn-voltar, #btn-confirmar {
+        padding: 6px 12px;
+    }
+
+    input {
+        width: 100%;
+    }
+}

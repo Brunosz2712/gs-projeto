@@ -126,6 +126,24 @@ window.watsonAssistantChatOptions = {
     document.head.appendChild(t);
   });
 
+  // Função para exibir ou ocultar partes do texto
+function toggleText() {
+    var moreText = document.getElementById("more-text");
+    var btnText = document.getElementById("toggle-btn");
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        btnText.innerHTML = "Ocultar Texto";
+    } else {
+        moreText.style.display = "none";
+        btnText.innerHTML = "Mostrar Texto Completo";
+    }
+}
+
+// Evento de clique no botão
+document.getElementById("toggle-btn").addEventListener("click", toggleText);
+
+
 
 
 
