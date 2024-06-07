@@ -9,7 +9,6 @@ body {
     background-image: url('../img/fundo2.jpg');
     background-size: cover;
     font-family: "Radio Canada Big", sans-serif;
-    /* background: linear-gradient(to left, #001f3f, #0074d9, #7fdbff); */
     width: 100vw;
     height: 100vh;
 }
@@ -36,17 +35,17 @@ main{
     right: 50%;
 }
 
-p{
+main p{
     font-size: 18px; 
     color: #fff;
 }
 
 .container{
     display: flex;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 input, select, button {
@@ -55,7 +54,6 @@ input, select, button {
     margin: 10px 0;
     padding: 8px;
     width: 80%;
-    /* border: 2px solid #00796b; */
     border: 1px solid #fff;
     border-radius: 5px;
 }
@@ -65,7 +63,6 @@ label{
 }
 
 button {
-    /* background: #00796b; */
     background: transparent;
     color: white;
     cursor: pointer;
@@ -77,12 +74,8 @@ button:hover {
 
 .form-container {
     background-color:rgba(2, 112, 176, 0.5);
-    /* display: flex; */
     justify-content: center;
-    /* margin-right: auto; */
     margin-left: 1%;
-    /* background: #0270b0;
-    background-color: rgba(2, 112, 176, 0.4);  */
     width: 42%;
     height: 67%;
     padding: 20px;
@@ -101,8 +94,6 @@ button:hover {
 #chart-container {
     text-align: center;
     display: flex;
-    /* justify-content: center; */
-    /* margin: auto; */
     justify-content: center;
     width: 60%;
     height: 39%;
@@ -120,38 +111,6 @@ button:hover {
     text-align: center;
     margin-left: -6%;
     color: #fff;
-    /* display: flex; */
-    /* justify-content: center; */
-}
-
-.bot{
-    background-color:rgba(2, 112, 176, 0.5);
-    display: flex;
-    justify-content: center;
-    /* text-align: center; */
-    /* margin-left: -2%; */
-    margin-top: -22%;
-    border-radius: 20px;
-    margin-left:   47%;
-    /* padding-right: -5%; */
-    width: 50%;
-    height: 40%;
-    border: 1px solid #fff;
-    /* background-color: rgba(2, 112, 176, 0.4); */
-    /* margin-top: -50%; */
-    margin-right: 1%;
-}
-
-.bot{
-    color: #fff;
-    text-align: center;
-}
-
-.form-container-g {
-    background: #000;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .botao{
@@ -166,7 +125,6 @@ button:hover {
     border-radius: 55px;
     padding: 2px 26px;
     text-decoration: none;
-    /* border: 1px solid #d9d9d9; */
 }
 
 .btn-voltar:hover{
@@ -177,72 +135,95 @@ button:hover {
 
  #ranking{
     background-color: rgba(2, 112, 176, 0.5);
-    display: flex;
-    justify-content: center;
     text-align: center;
-    margin: 2%;
+    color: #fff;
+    margin: auto;
     margin-left: 1%;
     width: 51%;
     height: 200px;
     border: 1px solid #fff;
     border-radius: 20px;
-    /* margin-top: -3%; */
  }
 
  #ranking h2{
     color: #FF00FF;
  }
 
- .first-place {
-    font-size: 1.5em; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Torna o texto em negrito */
-    color: #f44336; /* Cor vermelha para destaque */
-}
-
 #beach-ranking li {
     display: flex;
     margin-top: auto;
-    margin-bottom: 5px; /* Espaçamento entre os itens do ranking */
+    margin-bottom: 5px;
 }
 
 #top-beach-message {
-    font-size: 1.2em; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Torna o texto em negrito */
-    color: #00FF00 /* Cor verde para destaque */
-    /* margin-top: 10px; Espaçamento acima do parágrafo */
+    font-size: 1.2em; 
+    font-weight: bold;
+    color: #00FF00 
 }
 
-.integrates{
-    justify-content: center;
+.integrantes{
+    /* background-color: rgba(2, 112, 176, 0.5); */
+    display: flex;
     margin: auto;
-    background-color: rgba(2, 112, 176, 0.5);
+    justify-content: center;
+    /* border: 1px solid #fff; */
     border-radius: 20px;
-    border: 1px solid #fff;
-    width: 65%;
-    height: 50%;
-    margin-top: 3%;
+    width: 95%;
+    height: 40%;
+    margin-top: 4%;
+}
+
+.integrantes p {
+    color: #fff;
+    text-align: center;
 }
 
 .titulo{
-    display: flex;
-    margin-top: 0%;
-    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
     color: #fff;
 }
 
 .gustavo img{
-    width: 80%;
-    height: 70%;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 40%;
     border-radius: 100%;
 }
 
 .gustavo {
-    width: 16%;
-    height: 55%;
-    text-align: center;
-    margin-left: 1%;
-    margin-top: 1%;
-    border-radius: 20px;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    margin-right: auto;
+    /* border: 1px solid #fff; */
+}
+.gustavo a {
+    /* display: flex; */
+    text-decoration: none;
+    margin-left: 37.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.instagram{
+    justify-content: center;
+    color: #fff;
+    background-color: #FF00FF;
+    border-radius: 20%;
+    width: 20%;
+    height: 20%;
+}
+.linkedin{
+    justify-content: center;
+    color: #fff;
+    background-color: #6495ED;
+    border-radius: 20%;
+    width: 20%;
+    height: 20%;
 }
 
 h3{
@@ -251,41 +232,76 @@ h3{
 }
 
 .bruno img{
-    width: 90%;
-    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    height: 40%;
     border-radius: 100%;
     
 }
 
 .bruno{
-    margin: auto;
-    margin-top: -21%;  
-    width: 15%;
-    height: 50%;
+    width: 20%;
+    height: 100%;
     text-align: center;
-    
+    margin: auto;
+    /* border: 1px solid #fff;     */
 }
 
 .jhonatta{
-    /* background-color: rgba(2, 112, 176, 0.5); */
-    margin-left: 84%;
-    margin-top: -19%;
-    width: 15%;
-    height: 50%;
+    width: 20%;
+    height: 100%;
     text-align: center;
+    margin-left: auto;
+    margin-right: 0%;
+    /* border: 1px solid #fff; */
 }
 
 .jhonatta img{
-    width: 80%;
-    height: 70%;
+    width: 60%;
+    height: 40%;
     border-radius: 100%;
 }
 
-a {
+#toggle-btn{
+    margin: auto;
     background-color: #00FF00;
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
+    color: #fff;
+    border-radius: 55px;
+    padding: 2px 26px;
     text-decoration: none;
-    color: #000;
 }
+
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para telas menores, como tablets */
+    main {
+        flex-direction: column; /* Colocando os elementos em coluna */
+        align-items: center; /* Centralizando na horizontal */
+    }
+
+    .form-container {
+        width: 80%; /* Ajustando a largura do formulário para telas menores */
+        margin-left: 0; /* Removendo a margem lateral */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos específicos para telas menores, como smartphones */
+    h1 {
+        font-size: 40px; /* Reduzindo o tamanho do título */
+    }
+
+    main p {
+        font-size: 16px; /* Reduzindo o tamanho do texto */
+    }
+
+    input, select, button {
+        width: 90%; /* Ajustando a largura dos inputs */
+    }
+
+    .form-container {
+        width: 90%; /* Ajustando a largura do formulário */
+    }
+}
+

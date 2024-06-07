@@ -10,13 +10,12 @@ body {
     background-image: url('../img/fundo2.jpg');
     background-size: cover;
     font-family: "Radio Canada Big", sans-serif;
-    /* background: linear-gradient(to left, #001f3f, #0074d9, #7fdbff); */
     width: 100vw;
     height: 100vh;
 }
 
 header{
-   margin-bottom: 5%;
+   margin-bottom: 3%;
 }
 
 h1{
@@ -40,6 +39,24 @@ h2{
     color: #fff;
 }
 
+main p{
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+}
+
+main h3{
+    font-size: 35px;
+    color: #fff;
+}
+
+main h2{
+    font-size: 35px;
+    color: #fff;
+}
+
+
 a{
     text-decoration: none;
     color: #fff;
@@ -49,44 +66,20 @@ a:hover{
     color: #8a2be2;
 }
 
-.fundo{
-    width: 100%;
-    height: 100%;
-    /* width: 100vw;
-    height: 100vh; */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .content{
-    position: relative;
-    z-index: 1;
-    /* max-width: 100px; */
+    display: flex;
     margin: 0 auto;
     text-align: center;
 }
 
 .help-ocean{
     background-color:#0270b0;
-    opacity: 0.8;
     margin: 0 auto;
-    width: 50%;
+    width: 51%;
     border-radius: 25px;
     border: 1px solid #fff;
-    margin-bottom: 60px;
-    /* height: 250px; */
-
-}
-
-.bot{
-    background-color:#0270b0;
-    opacity: 0.8;
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 25px;
-    border: 1px solid #fff;
-    /* height: 250px; */
+    margin-top: 2%;
+    padding-bottom: 2%;
 
 }
 
@@ -125,3 +118,46 @@ a:hover{
     background-color: #4b95c334;
     color:  #fff;
  }
+.praia-suja{
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    width: 95%;
+
+}
+
+ .p2{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 15%;
+    border-radius: 100px;
+ }
+
+ h3{
+    color: #fff;
+    text-align: center;
+ }
+
+/* Estilos para smartphones e dispositivos similares */
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size: 30px; /* Reduzindo ainda mais o tamanho do título */
+    }
+
+    h2, h3, main p{
+        font-size: 20px; /* Reduzindo ainda mais o tamanho dos subtítulos e texto principal */
+    }
+
+    .help-ocean{
+        width: 100%; /* Utilizando toda a largura disponível */
+    }
+
+    .p2{
+        width: 70%; /* Ajustando a largura do elemento */
+    }
+}
+
+ 
