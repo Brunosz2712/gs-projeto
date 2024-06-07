@@ -273,6 +273,12 @@ h3{
     text-decoration: none;
 }
 
+#toggle-btn:hover{
+    background-color: #4b95c334;
+    color:  #fff;
+ }
+
+
 @media screen and (max-width: 768px) {
     /* Estilos específicos para telas menores, como tablets */
     main {
