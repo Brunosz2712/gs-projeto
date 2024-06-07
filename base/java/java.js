@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let chart; // Variável para armazenar o objeto do gráfico
+    let chart; 
 
-    // Função para inicializar ou atualizar o gráfico
+    
     function initChart() {
         const ctx = document.getElementById('collection-chart').getContext('2d');
 
-        // Se o gráfico já existir, destrua-o antes de criar um novo
+        
         if (chart) {
             chart.destroy();
         }
 
-        // Inicializar o gráfico Chart.js
+        
         chart = new Chart(ctx, {
-            type: 'bar', // Tipo de gráfico: barras
+            type: 'bar', 
             data: {
-                labels: ['Santos', 'Ubatuba', 'Guarujá'], // Etiquetas para os dados
+                labels: ['Santos', 'Ubatuba', 'Guarujá'], 
                 datasets: [{
-                    label: 'Quantidade de Resíduos Coletados (kg)', // Legenda do conjunto de dados
-                    data: [0, 0, 0], // Dados iniciais (em kg)
-                    backgroundColor: ['#4caf50', '#ffeb3b', '#f44336'] // Cores de fundo das barras
+                    label: 'Quantidade de Resíduos Coletados (kg)', 
+                    data: [0, 0, 0], 
+                    backgroundColor: ['#4caf50', '#ffeb3b', '#f44336'] 
                 }]
             },
             options: {
-                responsive: true, // Tornar o gráfico responsivo
+                responsive: true, 
                 scales: {
                     y: {
-                        beginAtZero: true, // Iniciar o eixo Y no zero
+                        beginAtZero: true, 
                         title: {
                             display: true,
-                            text: 'Quilogramas (kg)' // Título do eixo Y
+                            text: 'Quilogramas (kg)' 
                         }
                     }
                 }
@@ -36,23 +36,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Chamar a função de inicialização do gráfico ao carregar a página
+    
     initChart();
 
-    // Função para atualizar o gráfico com os dados do formulário
+    
     function updateChart(beach, weight) {
-        // Encontrar o índice da praia no array de labels
+        
         const index = ['Santos', 'Ubatuba', 'Guarujá'].indexOf(beach);
         if (index !== -1) {
-            // Adicionar o peso coletado à praia correspondente
+            
             chart.data.datasets[0].data[index] += weight;
-            // Atualizar o gráfico
+            
             chart.update();
-            updateRanking(); // Atualizar o ranking
+            updateRanking(); 
         }
     }
 
-    // Função para limpar os campos do formulário
+    
     function clearFormFields() {
         document.getElementById('beach-select').value = 'escolha';
         document.getElementById('photo').value = '';
@@ -60,28 +60,28 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('weight').value = '';
     }
 
-    // Função para enviar o formulário
+
     window.submitForm = function() {
         const beach = document.getElementById('beach-select').value;
-        const weight = parseFloat(document.getElementById('weight').value); // Captura o valor e converte para float
+        const weight = parseFloat(document.getElementById('weight').value); 
 
-        // Verifica se os campos estão preenchidos corretamente
+
         if (beach !== 'escolha' && !isNaN(weight) && weight > 0) {
             updateChart(beach, weight);
-            clearFormFields(); // Limpar os campos do formulário
+            clearFormFields(); 
         } else {
-            // Adicione sua lógica para tratar erros (por exemplo, exibir mensagens de erro)
+    
             alert('Por favor, selecione uma praia e insira um peso válido.');
         }
     };
 
-    // Evento para capturar o envio do formulário
+    
     document.getElementById('beach-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar o comportamento padrão do formulário (recarregar a página)
-        submitForm(); // Chamar a função para enviar o formulário
+        event.preventDefault(); 
+        submitForm(); 
     });
 
-    // Função para atualizar o ranking das praias
+
     function updateRanking() {
         const beachRanking = document.getElementById('beach-ranking');
         if (!beachRanking) {
@@ -92,13 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
             return { beach: chart.data.labels[index], weight: weight };
         });
 
-        // Ordenar as praias pela quantidade de resíduos coletados (maior para menor)
+        
         beachData.sort((a, b) => b.weight - a.weight);
 
-        // Limpar o ranking atual
+        
         beachRanking.innerHTML = '';
 
-        // Adicionar as praias ordenadas ao ranking
+    
         beachData.forEach((data, index) => {
             const listItem = document.createElement('li');
             listItem.textContent = `${data.beach}: ${data.weight} kg`;
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             beachRanking.appendChild(listItem);
         });
 
-        // Atualizar a mensagem de destaque da praia com mais lixo coletado
+        
         const topBeachMessage = document.getElementById('top-beach-message');
         if (beachData.length > 0 && topBeachMessage) {
             topBeachMessage.textContent = `A  Praia de ${beachData[0].beach} coletou ${beachData[0].weight} quilos de lixo.`;
@@ -115,9 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 window.watsonAssistantChatOptions = {
-    integrationID: "6288e39b-e52c-49f8-83bc-f67fd3150e51", // The ID of this integration.
-    region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "f7ffc27f-c748-4afb-b070-600216d22e92", // The ID of your service instance.
+    integrationID: "6288e39b-e52c-49f8-83bc-f67fd3150e51",
+    region: "us-south",
+    serviceInstanceID: "f7ffc27f-c748-4afb-b070-600216d22e92", 
     onLoad: async (instance) => { await instance.render(); }
   };
   setTimeout(function(){
@@ -126,7 +126,7 @@ window.watsonAssistantChatOptions = {
     document.head.appendChild(t);
   });
 
-  // Função para exibir ou ocultar partes do texto
+  
 function toggleText() {
     var moreText = document.getElementById("more-text");
     var btnText = document.getElementById("toggle-btn");
@@ -140,7 +140,7 @@ function toggleText() {
     }
 }
 
-// Evento de clique no botão
+
 document.getElementById("toggle-btn").addEventListener("click", toggleText);
 
 

@@ -162,11 +162,9 @@ button:hover {
 }
 
 .integrantes{
-    /* background-color: rgba(2, 112, 176, 0.5); */
     display: flex;
     margin: auto;
     justify-content: center;
-    /* border: 1px solid #fff; */
     border-radius: 20px;
     width: 95%;
     height: 40%;
@@ -197,12 +195,15 @@ button:hover {
     width: 20%;
     height: 100%;
     margin-right: auto;
-    /* border: 1px solid #fff; */
 }
 .gustavo a {
-    /* display: flex; */
     text-decoration: none;
     margin-left: 37.5%;
+}
+
+a:hover {
+    background-color: #4b95c334;
+    color:  #fff;
 }
 
 a{
@@ -246,7 +247,6 @@ h3{
     height: 100%;
     text-align: center;
     margin: auto;
-    /* border: 1px solid #fff;     */
 }
 
 .jhonatta{
@@ -255,7 +255,6 @@ h3{
     text-align: center;
     margin-left: auto;
     margin-right: 0%;
-    /* border: 1px solid #fff; */
 }
 
 .jhonatta img{
@@ -280,34 +279,32 @@ h3{
 
 
 @media screen and (max-width: 768px) {
-    /* Estilos específicos para telas menores, como tablets */
     main {
-        flex-direction: column; /* Colocando os elementos em coluna */
-        align-items: center; /* Centralizando na horizontal */
+        flex-direction: column; 
+        align-items: center;
     }
 
     .form-container {
-        width: 80%; /* Ajustando a largura do formulário para telas menores */
-        margin-left: 0; /* Removendo a margem lateral */
+        width: 80%;
+        margin-left: 0;
     }
 }
 
 @media screen and (max-width: 480px) {
-    /* Estilos específicos para telas menores, como smartphones */
     h1 {
-        font-size: 40px; /* Reduzindo o tamanho do título */
+        font-size: 40px;
     }
 
     main p {
-        font-size: 16px; /* Reduzindo o tamanho do texto */
+        font-size: 16px;
     }
 
     input, select, button {
-        width: 90%; /* Ajustando a largura dos inputs */
+        width: 90%;
     }
 
     .form-container {
-        width: 90%; /* Ajustando a largura do formulário */
+        width: 90%;
     }
 }
 

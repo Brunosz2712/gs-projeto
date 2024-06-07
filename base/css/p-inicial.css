@@ -141,22 +141,22 @@ a:hover{
     text-align: center;
  }
 
-/* Estilos para smartphones e dispositivos similares */
+
 @media only screen and (max-width: 480px) {
     h1{
-        font-size: 30px; /* Reduzindo ainda mais o tamanho do título */
+        font-size: 30px;
     }
 
     h2, h3, main p{
-        font-size: 20px; /* Reduzindo ainda mais o tamanho dos subtítulos e texto principal */
+        font-size: 20px;
     }
 
     .help-ocean{
-        width: 100%; /* Utilizando toda a largura disponível */
+        width: 100%;
     }
 
     .p2{
-        width: 70%; /* Ajustando a largura do elemento */
+        width: 70%; 
     }
 }
 
